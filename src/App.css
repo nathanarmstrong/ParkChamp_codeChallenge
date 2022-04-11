@@ -1,21 +1,10 @@
-.App {
+.app {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__header {
+  min-height: 10vh;
+  background-color: #2B2D42;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +13,39 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app__main {
+  min-height: 80vh;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  background-color: #EDF2F4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__footer {
+  min-height: 10vh;
+  background-color: #8D99AE;
+  color: white;
+}
+
+.alert {
+  color: #EF233C;
+}
+.success {
+color: #355834;
+}
+.author {
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0.5em;
+}
+
+/* OVER WRITE LIST GROUP BOOTSTRAP */
+.list-group-item.active{
+  border: 1px solid rgba(0,0,0,.125) !important;
+}
+
+/* OVER WRITE SPINNER GROW */
+.spinner-grow{
+  width: 5rem;
+  height: 5rem;
+  color: #8D99AE;
 }
